@@ -236,13 +236,14 @@ footer {
 }
 
 .post-content {
-  line-height: 0.25
+  line-height: 1.65;
 }
 
 .post-content h2 {
   margin-top: 3em;
   margin-bottom: 1em;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .post-content h3 {
