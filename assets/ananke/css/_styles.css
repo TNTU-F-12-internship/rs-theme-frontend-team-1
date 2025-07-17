@@ -331,26 +331,6 @@ textarea {
   transform: scale(0.99);
 }
 
-/* Table of Contents */
-.toc-container {
-  font-size: 0.9rem;
-  padding: 1rem;
-  margin-top: 2rem;
-  max-height: calc(100vh - 6rem);
-  overflow-y: auto;
-  position: sticky;
-  top: 5rem;
-}
-
-.toc-container h3 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 1.3rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
 .tag-link a {
   display: inline-block;
   line-height: 1.15;
