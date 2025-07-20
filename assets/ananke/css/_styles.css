@@ -236,13 +236,14 @@ footer {
 }
 
 .post-content {
-  line-height: 0.25
+  line-height: 1.65;
 }
 
 .post-content h2 {
   margin-top: 3em;
   margin-bottom: 1em;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .post-content h3 {
@@ -333,18 +334,19 @@ textarea {
 .tag-link a {
   display: inline-block;
   line-height: 1.15;
-  color: var(--site-color);
-  background-color: #0080801c;
+  color: var(--site-color, #008080);
+  background-color: #0080801c; 
   text-decoration: none;
-  appearance: none;
-  padding-block: 5px;
-  padding-inline: 5px;
+  padding: 5px 10px;
   border-radius: 5px;
-  margin: 0 3px;
-  transition: transform 0.2s;
+  margin: 0 6px 6px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
-.tag-link a:hover {
-  transform: scale(1.1);
+
+.tag-link a:hover, .tag-link a:focus {
+  background-color: #00999922; 
+  outline: none;
 }
 
 .color-link a {
