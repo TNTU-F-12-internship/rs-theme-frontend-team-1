@@ -1,0 +1,83 @@
+@keyframes pulse {
+  0% { transform: scale(1.05); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1.05); }
+}
+
+.logo-hover {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform, box-shadow, filter;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-hover:hover {
+  transform: scale(1.1);
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0, 128, 128, 0.4),
+              0 0 25px rgba(0, 128, 128, 0.2);
+  filter: brightness(1.1);
+  animation: pulse 1s infinite alternate;
+}
+
+.nav-name {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: inherit;
+}
+.nav-name:hover {
+  background-color: rgba(0, 128, 128, 0.1); 
+  border-radius: 0.5rem;
+}
+
+.tag-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}  
+.bg-shadow-img {
+    box-shadow: 0 4px 10px rgba(0, 128, 128, 0.5);
+}
+
+.bg-nav-white {
+    background-color: rgba(40, 52, 52, 0.5);
+}
+
+.bg-header-img {
+background-color: rgba(0, 128, 128, 0.1);
+}
+
+.hover-green:focus, .hover-green:hover {
+    color: #008080;
+    transition: color 0.3s ease;
+}
+
+.bg-shadow-post {
+    box-shadow: 0.3rem 0.4rem 1rem rgba(0, 128, 128, .3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 8px;
+}
+
+.bg-shadow-tags {
+    box-shadow: 0.3rem 0.4rem 1rem rgba(0, 128, 128, .3);
+    border-radius: 1rem;
+}
+
+.button-read-more {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+  
+.button-read-more:hover {
+    box-shadow: 0.3rem 0.4rem 1rem rgba(0, 128, 128, 1);
+    opacity: .6;
+    border-color: #006666;
+    transform: translateY(-2px);
+}
+
+.fw6 {
+    font-weight: 600;
+}

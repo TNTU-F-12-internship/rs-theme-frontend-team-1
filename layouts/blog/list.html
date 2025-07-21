@@ -31,15 +31,15 @@
     </div>
   </div>
 
-  <div class="sticky-sidebar w-20 pv4 pv0-ns">
-    <div class="filter-blogs ba br3 b--light-silver">
+  <div class="sticky-sidebar w-20 pv4 pv0-ns bg-shadow-tags">
+    <div class="filter-blogs br3 b--light-silver">
       <div class="pa2">
         {{ $blogURL := "/blog/" }}
         {{ if eq .Site.LanguageCode "ua" }}
         {{ $blogURL = "/ua/blog/" }}
         {{ end }}
-        <a class="mv2 pa2 ba br3 b--light-silver black-50 no-underline inline-flex items-center justify-center
-                  site-color-h w-100 {{ if eq $blogURL $.RelPermalink }}current-page{{ end }}" href="{{ $blogURL }}"
+        <a class="mv2 pa2 br3 b--light-silver black-50 no-underline inline-flex items-center justify-center
+                  site-color-h w-100 button-read-more {{ if eq $blogURL $.RelPermalink }}current-page{{ end }}" href="{{ $blogURL }}"
         >
           <b>{{ .Site.Params.all_articles }}</b>
         </a>
@@ -51,7 +51,7 @@
           {{ end }}
           {{ range $blog, $pages := $blogs }}
           {{ $currentURL := printf "%s%s/" $baseLangURL $blog }}
-          <a class="mv2 mr2 pa2 ba br3 b--light-silver black-50 no-underline inline-flex site-color-h {{ if eq $currentURL $.RelPermalink }}current-page{{ end }}" href="{{ $currentURL }}">
+          <a class="mv2 mr2 pa2 button-read-more br3 b--light-silver black-50 no-underline inline-flex site-color-h {{ if eq $currentURL $.RelPermalink }}current-page{{ end }}" href="{{ $currentURL }}">
             <span>{{ $blog }}</span>
             <span>({{ len $pages }})</span>
           </a>

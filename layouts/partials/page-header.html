@@ -4,8 +4,8 @@
 <div id="menu-desktop">
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-  <header class="cover bg-right" style="background-image: url('{{ $featured_image }}');">
-    <div class="bg-black-30">
+  <header class="cover bg-right" style="background-image: url('{{ $featured_image }}');z-index:1;">
+    <div class="bg-header-img bg-shadow-img">
       {{ partial "site-navigation.html" . }}
       {{ if strings.Contains .Permalink "/blogs/" }}
       <div class="tc p-banner-sm ph3 ph4-ns w-70 w-100-ns center">
@@ -78,8 +78,8 @@
 
   {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-  <header class="cover bg-right" style="background-image: url('{{ $featured_image }}');">
-    <div class="bg-black-30">
+  <header class="cover bg-right bg-shadow-img" style="background-image: url('{{ $featured_image }}');z-index:1;">
+    <div class=".bg-header-img bg-shadow-img">
       {{ if strings.Contains .Permalink "/blogs/" }}
       <div class="tc p-banner-sm p-banner-sm-ns ph3 ph4-ns w-70 w-100-ns center">
         <h1 class="f2 f1-l f3-ns white-90 lh-title">{{ .Site.Params.blog }}</h1>
